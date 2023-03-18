@@ -4,7 +4,7 @@ jobs:
   build_latex:
    runs-on: ubuntu-latest   
    steps: 
-     - name: Set up Git Repository
+     - name: Set up Git repository
        uses: actions/checkout@v2
      - name: Compile LaTeX document
        uses: xu-cheng/latex-actions@v2
