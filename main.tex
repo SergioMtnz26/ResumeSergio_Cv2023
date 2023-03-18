@@ -1,0 +1,205 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage{tipa}
+\usepackage{upquote}
+
+\usepackage{chronosys}
+\usepackage{fontawesome5}
+\usepackage{amssymb}
+
+\usepackage{multicol}
+
+\newcommand{\colorsquare}[1]{\textcolor{#1}{$\blacksquare$}}
+\newcommand{\tbullet}{$\bullet$~}
+
+% colors
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8} % sut
+\definecolor{bazaar}{rgb}{0.6, 0.47, 0.48} % bazaar
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33} % sbu
+\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42} % mitrc
+\definecolor{carolinablue}{rgb}{0.6, 0.73, 0.89} % uni freiburg
+\definecolor{frenchblue}{rgb}{0.0, 0.45, 0.73} % apptec
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Sergio Martinez Padilla%
+% \footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}
+}{Software Engineer}{Last update on \today~(v2.3.0)}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:chavez46711.at.hotmail.dot.es}{chavez46711\mbox{}@\mbox{}hotmail.es}\sbull
+\textsmaller{+}52 55 8725 1969\sbull
+ % \textsmaller{+}31 6 301 59 402\sbull
+% \href{http://aerabi.com}{aerabi.com}\sbull
+\href{https://github.com/SergioMtnz26}{github.com} \sbull
+\href{http://www.linkedin.com/in/sergio-martinez-b70a79177}{linkedin.com} \sbull
+\href{https://capable-bunny-65706d.netlify.app/}{MyWeb} \sbull
+% \href{https://orcid.org/0000-0001-7088-417X}{\textsc{orc}i\textsc{d} 0000-0001-7088-417X} \\
+% {\newnums angellandros} \emph{(Skype)}\sbull
+% Schildackerweg 8 \sbull
+% 79115\thinspace\ {\sc Freiburg im Breisgau}\sbull
+% Baden-W\"urttemberg\sbull
+% {\sc Germany}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Timeline}
+
+
+\startchronology[startyear=2012,startdate=false,stopdate=false,stopyear=2023]
+\chronoperiode[color=carolinablue]{2020}{2023}{FREELANCER}
+\chronoperiode[color=frenchblue]{2017}{2020}{TCS LATAM}
+\chronoperiode[color=orange]{2016}{2017}{INFOTEC}
+\chronoperiode[color=brickred]{2012}{2016}{Utel University}
+\stopchronology
+
+
+
+% \startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
+% \chronoperiode[color=brickred]{2009}{2013}{BSc in Math}
+% \chronoperiode[color=amethyst]{2013}{2015}{MSc in Logic}
+% \chronoperiode[color=carolinablue]{2016}{2021}{MSc in CS}
+% \stopchronology
+
+\spacedhrule{-0.5em}{1em}
+
+\roottitle{Summary}
+
+\begin{itemize}
+    \item More than \textbf{2} years of professional experience:
+      \colorsquare{orange} 1y +
+      \colorsquare{frenchblue} 2y +
+      \colorsquare{red} 1y +
+      \colorsquare{bazaar} 1.5y +
+      \colorsquare{camouflagegreen} 2y \\
+        using various languages: Java (\colorsquare{orange}\colorsquare{frenchblue}\colorsquare{carolinablue}\colorsquare{bazaar}), SpringFramework (\colorsquare{orange}\colorsquare{frenchblue}), SpringBoot(\colorsquare{red}\colorsquare{camouflagegreen}), Css3, JavaScript, Html5, etc.
+    
+    \item My career objective is to work at a company where I will learn and grow in the professional software/web development world. I have always been a quick learner and am passionate about writing code. 
+    
+    % \item Life-long-learner. Automation-freak. Dockerizer. Challenge-hungry. Optimizer. Futurist.
+\end{itemize}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Professional Experience}
+
+\headedsection
+  {\href{https://capable-bunny-65706d.netlify.app/}{\colorsquare{carolinablue} Frelancer}}
+  {\textsc{Cdmx, Mexico}} {%
+  \headedsubsection
+    {Software Java Developer Jr..}
+    {Apr \apo20 -- Present}
+    {\bodytext{%
+    \begin{tabular}{p{0.45\textwidth}l}
+        \tbullet Object‑Oriented Programming & \tbullet Web Development  \\
+        \tbullet Database Systems & \tbullet Develop features for the backend
+    \end{tabular} \\
+    \textbf{\#Kubernetes \#Java \#MySql \#SpringFramework \#JavaScript \#Angular \#Docker\#Css3 \#Maven \#Html5}}}
+}
+
+\headedsection
+  {\href{https://www.tcs.com//}{\colorsquare{frenchblue} Tata Consultancy Services}}
+  {\textsc{Cdmx, Mexico}} {%
+  \headedsubsection
+    {Software Engineer $\mapsto$ Java Developer Jr.}
+    {Jul \apo17 -- Mar\apo20}
+    {\bodytext{%
+    \begin{tabular}{p{0.45\textwidth}l}
+        \tbullet Work with ServiceNow DevOps  & \tbullet Introduce DevOps \\
+        \tbullet Introduction to microservices architecture & \tbullet Citibanamex North America project \\
+        \tbullet Managing requests, incidents, problems. &
+        \tbullet Agile way of work, Scrum
+    \end{tabular} \\
+    \textbf{\#Java \#MySql \#ServiceNow \#SpringBoot  \#DevOps \#Scrum \#MicroServices \#Docker \#SpringBoot}\\
+    }}
+}
+
+\vspace{-1em}
+
+\headedsection
+  {\href{https://www.infotec.mx/}{\colorsquare{orange}  Infotec} (}
+  {\textsc{Cdmx, Mexico}} {%
+  \headedsubsection
+    {Java Developer (100\%)}
+    {Oct \apo16 -- Oct \apo17}
+    {\bodytext{Apply knowledge of object-oriented programming, algorithm and pseudo-code elaboration.The coding of the software(development) was carried out according to the defined design, as well as the test of the pieces of software.
+Realization of design and modeling using UML.\\ \textbf{\#Java \#SpringFramework \#Maven \#Mysql}}}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/sergio-martinez-b70a79177}{LinkedIn profile} for a more complete list of work experiences along with recommendations and certificates.}
+\end{center}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{https://uteluniversidad.mx/p/utel-formacion?msclkid=1eb53b5cf61218f895775f4eda7ce02f}{\colorsquare{brickred} Utel University}}
+  {\textsc{Cdmx, Mexico}} {%
+  \headedsubsection
+    {Enginner in Computer Systems (IT)}
+    {2012 -- 2016}
+    {%
+    % \bodytext{Thesis: A Basis for Event-Driven Programming.}
+    }
+}
+
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Languages}
+
+% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+%   {Programming languages:}
+%   {Python \emph{(mother tongue)}, TypeScript, Java, Go, Scala, Coq, C++, JavaScript.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Spanish \emph{(mother tongue)}, English \emph{(C1--C2)} \emph{}.
+%   Lived in \textsc{Mexico}, \textsc{CDMX},  \textsc{Switzerland}, and \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, and Book Pahlavi.
+  }
+
+% \vspace{0.5em}
+% \inlineheadsection
+%   {Other skills:}
+%   {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
+
+\end{document}
+
+＀
